@@ -184,7 +184,7 @@ main section form select{
     text-align: center;
 
     padding: 5px;
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: var(--white-color);
     border: none;
     
@@ -195,14 +195,14 @@ main section form button{
     width: 100px;   
     margin-bottom: 10px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     border-color: gray;
     padding-top: 10px;
     padding-block:1px;
     text-align: center;
 
     padding: 5px;
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: var(--white-color);
     border: none;
     

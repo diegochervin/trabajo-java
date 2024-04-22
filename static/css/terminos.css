@@ -1,0 +1,135 @@
+:root{
+    --primary-color:#021366; ;
+    --bg-color:#f98b8b;
+    --secondary-color:#dccece;
+    --third-color:#e80c7d;
+    --third-bis-color:#db4648f2;
+    --bg-input-color:#4f31572c;
+    --white-color: #fdf5ef;
+    --primary-font:'Nunito', sans-serif;
+    --secondary-font: 'Philosopher", sans-serif';
+     }
+
+
+header {
+    background-color:var(--primary-color); 
+    margin: 0;
+    flex-direction: column;
+    row-gap: 20px;
+  
+  }
+
+ 
+      
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+    text-align: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+        }
+    
+    nav ul li :first-child{
+            margin-left: 0;
+    }
+    
+    nav ul li :last-child{
+        margin-right: 2vw;
+    }
+        
+    nav ul li a, nav>a{
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: var(--secondary-color);
+            transition: background-color 0.3s ;
+    }
+
+nav ul li a:hover {
+    background-color: var(--third-color);
+    color: var(--white-color);
+    }
+    
+
+ #logo{
+ padding-left: 10vh;
+ padding-top: 1.5vh;
+
+    }
+
+
+    .footer {
+        background-color:var(--primary-color); 
+        margin: 0;
+        flex-direction: column;
+        row-gap: 20px;
+        
+      }
+    
+          
+    .footer a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin: 2vw;
+        padding: 0;
+        list-style-type: none; 
+        text-align: center;
+        display: inline-block;
+    }
+
+
+
+    body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.terms {
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.terms ul {
+    padding-left: 20px;
+}
+
+.terms button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terms button:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+

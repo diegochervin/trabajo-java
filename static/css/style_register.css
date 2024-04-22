@@ -1,0 +1,250 @@
+:root{
+    --primary-color:#021366; ;
+    --bg-color:#f98b8b;
+    --secondary-color:#dccece;
+    --third-color:#e80c7d;
+    --third-bis-color:#db4648f2;
+    --bg-input-color:#4f31572c;
+    --white-color: #fdf5ef;
+    --primary-font:'Nunito', sans-serif;
+    --secondary-font: 'Philosopher", sans-serif';
+     }
+
+
+
+ *{ padding: 0;
+    margin: 0;
+ }
+
+ body, html{
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+ 
+a{
+   text-decoration: none;
+   color: var(--white-color);
+} 
+
+
+h1{
+   color: var(--white-color);
+   font-size: 2.5rem;
+}
+
+h2{
+   color: var(--white-color);
+   font-size: 1.5rem;
+}
+
+
+
+
+
+header {
+   background-color:var(--primary-color); 
+   margin: 0;
+   flex-direction: column;
+   row-gap: 20px;
+ 
+ }
+
+
+     
+
+ nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+
+}
+
+
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none; 
+   text-align: right;
+   }
+
+   nav ul li {
+       display: inline-block;
+       }
+   
+   nav ul li :first-child{
+           margin-left: 0;
+   }
+   
+   nav ul li :last-child{
+       margin-right: 2vw;
+   }
+       
+   nav ul li a, nav>a{
+           display: block; /* convierte los elementos de lina a bloque en el menu */
+           padding: 10px 20px;
+           text-decoration: none;
+           color: var(--secondary-color);
+           transition: background-color 0.3s ;
+   }
+
+nav ul li a:hover {
+   background-color: var(--third-color);
+   color: var(--white-color);
+   }
+   
+
+#logo{
+padding-left: 10vh;
+padding-top: 1.5vh;
+
+   }
+
+
+
+
+
+body{
+   background-color: var(--bg-color);
+   font-family: var(--primary-font);
+}
+
+
+
+
+/* creado por diego torres ( no soy el cantante xD) */
+/* Main section aside */
+
+main{
+    
+    display: flex;
+    justify-content: space-around;/* centrar horizontalmente */ 
+    align-items: center;/* centra verticalmente */
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.d-flex h2{    
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    transition: background-color 0.3s;
+    border: none;
+    top: 25%;
+    left: 24%;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    font-family: var(--secondary-font);
+  
+}
+
+
+section form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-block: 1px;
+    width: 600px;
+    text-align: center;
+    border: 20px;
+  
+}
+section form p{
+    font-family: var(--secondary-font);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+main section form div input {
+    padding: 8px;
+    border-radius: 16px;
+    background-color: none;
+    border-color: gray;
+    border: 2px solid grey;
+    margin-bottom: 10px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+main section form div label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+main section form select{
+    
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border-color: gray;
+    padding-top: 10px;
+    padding-block:1px;
+    text-align: center;
+
+    padding: 5px;
+    background-color: #4CAF50;
+    color: var(--white-color);
+    border: none;
+    
+}
+
+main section form button{
+    
+    width: 100px;   
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border-color: gray;
+    padding-top: 10px;
+    padding-block:1px;
+    text-align: center;
+
+    padding: 5px;
+    background-color: #4CAF50;
+    color: var(--white-color);
+    border: none;
+    
+    
+
+}
+
+
+div a{
+    
+    color: var(--primary-color);
+}
+
+aside img{
+    display:grid;
+    
+    
+    
+}
+
+
+/* footer */
+
+
+.footer {
+    background-color:var(--primary-color); 
+    margin: 0;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+    
+  }
+
+      
+
+.footer a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 2vw;
+    padding: 0;
+    list-style-type: none; 
+    text-align: center;
+    display: inline-block;
+}

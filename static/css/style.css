@@ -188,6 +188,8 @@ body{
     border: none;
     cursor: pointer;
     width: 30vw;
+    height: 5vh;
+    font-size: 1.5rem;
 }
 
 .button-search {

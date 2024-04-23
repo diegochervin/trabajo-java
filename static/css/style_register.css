@@ -154,7 +154,7 @@ section form{
 section form p{
     font-family: var(--secondary-font);
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 main section form div input {
@@ -218,6 +218,7 @@ div a{
 
 aside img{
     display:grid;
+    height: 83vh;
     
     
     

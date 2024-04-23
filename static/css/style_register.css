@@ -107,7 +107,7 @@ padding-top: 1.5vh;
 
 
 body{
-   background-color: var(--bg-color);
+   background-color: var(--secondary-color);
    font-family: var(--primary-font);
 }
 
@@ -117,68 +117,64 @@ body{
 /* creado por diego torres ( no soy el cantante xD) */
 /* Main section aside */
 
-main{
+.main{
     
+    width: 100%;
+    height: calc(100vh - 200px);
     display: flex;
-    justify-content: space-around;/* centrar horizontalmente */ 
-    align-items: center;/* centra verticalmente */
-    background-color: var(--white-color);
-    color: var(--primary-color);
+    justify-content:space-around;
+    align-items: center;
 }
 
-.d-flex h2{    
-    padding: 10px 20px;
-    font-size: 1.7rem;
+.section{
+    width: 75%;
+    height: 100%;       
+}
+
+.h2{
+    padding: 5px 20px;
+    font-size: 2rem;
     color: var(--primary-color);
-    transition: background-color 0.3s;
-    border: none;
-    top: 25%;
-    left: 24%;
+        
+    top: 10%;
+    left: 10%;
     position: absolute;
-    transform: translate(-50%, 50%);
+    
     font-family: var(--secondary-font);
-  
-}
 
-
-section form{
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-block: 1px;
-    width: 600px;
-    text-align: center;
-    border: 20px;
-  
 }
-section form p{
+.registro{
     font-family: var(--secondary-font);
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 30px;
 }
+.form-control input{
 
-main section form div input {
     padding: 8px;
-    border-radius: 16px;
+    border-radius: 15px;
     background-color: none;
-    border-color: gray;
-    border: 2px solid grey;
+    border-color: var(--primary-color);
+    
     margin-bottom: 10px;
     outline: none;
-    color: black;
-    font-size: 16px;
+    color: var(--primary-color);
+    font-size: 16px;    
 }
-main section form div label{
+
+.labelFecha{
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    color: var(--primary-color);
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
-main section form select{
-    
+.form-select{
     margin-bottom: 10px;
     border-radius: 5px;
     font-size: 16px;
-    border-color: gray;
+    
     padding-top: 10px;
     padding-block:1px;
     text-align: center;
@@ -187,16 +183,13 @@ main section form select{
     background-color: var(--primary-color);
     color: var(--white-color);
     border: none;
-    
 }
-
-main section form button{
-    
+.button button{
     width: 100px;   
     margin-bottom: 10px;
     border-radius: 5px;
     font-size: 1rem;
-    border-color: gray;
+    
     padding-top: 10px;
     padding-block:1px;
     text-align: center;
@@ -205,22 +198,17 @@ main section form button{
     background-color: var(--primary-color);
     color: var(--white-color);
     border: none;
-    
-    
-
 }
 
-
-div a{
-    
+.form-help a{
     color: var(--primary-color);
 }
 
-aside img{
-    display:grid;
-    height: 83vh;
-    
-    
+
+.aside{
+    width: 30%; 
+    height: 100%;
+    display: flex;  
     
 }
 
@@ -228,7 +216,7 @@ aside img{
 /* footer */
 
 
-.footer {
+.footer {    
     background-color:var(--primary-color); 
     margin: 0;
     flex-direction: column;

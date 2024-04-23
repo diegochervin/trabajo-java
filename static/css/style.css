@@ -248,6 +248,7 @@ body{
     margin: 0;
     flex-direction: column;
     row-gap: 20px;
+    text-align: center;
     
   }
 

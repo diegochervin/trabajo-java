@@ -1,76 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cac-Movies, peliculas y series online</title>
-        <link rel="icon" href="../favicon.ico" type="image/x-icon" />
-        
-        <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"  ></script>
-    
-      </head> 
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">🎞️CAC-Movies</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanatorio Codo a Codo</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/fa04600604.js"
+      srossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../static/css/style_register.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- logo de la pagina -->
+        <div id="logo">
+          <a href="/">
+            <img src="../static/img/logo.png" alt="logo" />
+            <i class="logo"></i>
+          </a>
+        </div>
 
-  <main>
-<section id="form-wrapper">
-  <form action="#" method="post" novalidate id="form-register">    
-      <h2>Registro</h2>
-        <div class="form-control">
-          <label for="Name">Nombre</label>
-          <input type="text" name="Name" required id="name">
-        </div>
-        <div class="form-control">
-          <label for="last-name">Apellido</label>
-          <input type="text" name="last-name" required id="last-name">
-        </div>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="email" name="Name" required id="email">
-        </div>
-        <div class="form-control">
-          <label for="passw">Contraseña</label>
-          <input type="password" name="passw" required id="passw">
-        </div>
-        <div class="form-control">
-          <label for="date">Fecha de Nacimiento</label>
-          <input type="date" name="date" required id="date">
-        </div>
-        <div class="form-control">
-          <select name="country" id="country" class="form-select">
-          <option value="">Pais</option>
-          <option value="AR">ARGENTINA</option>
-          <option value="BO">BOLIVIA</option>
-          <option value="PY">PARAGUAY</option>
-        </div>
-      </select>
-      <div class="form-terms">
-        <div class="terms">
-          <input type="checkbox" id="terms" required>
-          <label>Acepto terminos y condiciones</label>
-        </div>
-      </div>
-      <button type="submit"><i class="fa-solid fa-film"></i>&nbsp;Registrate</button>
-      <button type="Reset">Borrar todo</button>
-      <div class="form-help">
-        <a href="#">¿Necesitas ayuda?</a>
-      </div>
+        <!-- hipervínculos del menú -->
+        <ul class="nav-links">
+          <li><a href="Nuestros_servicios.html">Nuestros Servicios</a></li>
+          <li>
+            <a href="./templates/sanatorios.html" class="btn-nav">Sanatorios</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="login-text"
+                ><i class="fa-regular fa-circle-user"></i>Iniciar Sesión
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    </form>
-</section>
+    <!-- Formulario -->
+    <main class="main">   
 
-  </main>
+      <section id="form-wrapper" class="d-flex">
+        <h2 class="h2">¡Bienvenidos a Sanatorio Codo a Codo!</h2>
+        <form action="#" method="post" novalidate id="form-register">
+          <p class="registro">Registro</p>
+          <!-- Campos -->
+          <div class="form-control">
+            <input 
+              type="text"
+              name="name"
+              required
+              id="name"
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="form-control">
+            <input 
+              type="text"
+              name="last-name"
+              required
+              id="last-name"
+              placeholder="Apellido"
+            />
+          </div>
+          <div class="form-control">
+            <input 
+              type="email"
+              name="email"
+              required
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-control">
+            <input 
+              type="password"
+              name="passw"
+              required
+              id="passw"
+              placeholder="Contraseña"
+            />
+          </div>
+          <div class="form-control">
+            <input 
+              type="password"
+              name="passw"
+              required
+              id="passw"
+              placeholder="Confirmar Contraseña"
+            />
+          </div>
 
-  <footer>
-    <a href="#">Terminos y condiciones</a></h4>  &nbsp; &nbsp;
-    <a href="#">Preguntas frecuentes</a></h4>  &nbsp; &nbsp;
-    <a href="#">Ayuda</a></h4>  &nbsp; &nbsp;
-    <a href="#">Administrador de peliculas</a>
-  </footer>
-</body>
+          <div class="form-control">
+            <input 
+              type="text"
+              name="phone"
+              required
+              id="phone"
+              placeholder="telefono"
+            />
+          </div>
 
+          <div class="form-control">
+            <label class="labelFecha" for="date">Fecha de nacimiento</label>
+            <input type="date" name="date" required id="date" />
+          </div>
+
+          <div class="form">
+            <select name="genero" id="genero" class="form-select">
+              <option value="">Genero</option>
+              <option value="IN">Indefinido</option>
+              <option value="MU">Mujer</option>
+              <option value="HO">Hombre</option>
+            </select>
+          </div>
+
+          <!-- boton de la accion -->
+          <div class="button">
+            <button type="submit">Registrate</button>
+            <button type="reset">Borrar todo</button>
+          </div>
+
+          <!-- zona de ayuda -->
+          <div class="form-help">
+            <a  href="#">¿Necesitas ayuda?</a>
+          </div>
+        </form>
+      </section>
+      <aside class="aside">
+        <img src="../static/img/registro_ingresar.jpg" alt="img registro" />
+      </aside>
+    </main>
+    <footer class="footer">
+      <a href="#">Términos y condiciones</a>
+      <a href="#">Preguntas frecuentes</a>
+      <a href="#">Ayuda</a>
+    </footer>
+    <!-- este codigo genera espacios en blanco para generar una separación=> &nbsp; -->
+  </body>
 </html>

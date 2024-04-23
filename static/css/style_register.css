@@ -1,0 +1,239 @@
+:root{
+    --primary-color:#021366; ;
+    --bg-color:#f98b8b;
+    --secondary-color:#dccece;
+    --third-color:#e80c7d;
+    --third-bis-color:#db4648f2;
+    --bg-input-color:#4f31572c;
+    --white-color: #fdf5ef;
+    --primary-font:'Nunito', sans-serif;
+    --secondary-font: 'Philosopher", sans-serif';
+     }
+
+
+
+ *{ padding: 0;
+    margin: 0;
+ }
+
+ body, html{
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+ 
+a{
+   text-decoration: none;
+   color: var(--white-color);
+} 
+
+
+h1{
+   color: var(--white-color);
+   font-size: 2.5rem;
+}
+
+h2{
+   color: var(--white-color);
+   font-size: 1.5rem;
+}
+
+
+
+
+
+header {
+   background-color:var(--primary-color); 
+   margin: 0;
+   flex-direction: column;
+   row-gap: 20px;
+ 
+ }
+
+
+     
+
+ nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+
+}
+
+
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none; 
+   text-align: right;
+   }
+
+   nav ul li {
+       display: inline-block;
+       }
+   
+   nav ul li :first-child{
+           margin-left: 0;
+   }
+   
+   nav ul li :last-child{
+       margin-right: 2vw;
+   }
+       
+   nav ul li a, nav>a{
+           display: block; /* convierte los elementos de lina a bloque en el menu */
+           padding: 10px 20px;
+           text-decoration: none;
+           color: var(--secondary-color);
+           transition: background-color 0.3s ;
+   }
+
+nav ul li a:hover {
+   background-color: var(--third-color);
+   color: var(--white-color);
+   }
+   
+
+#logo{
+padding-left: 10vh;
+padding-top: 1.5vh;
+
+   }
+
+
+
+
+
+body{
+   background-color: var(--secondary-color);
+   font-family: var(--primary-font);
+}
+
+
+
+
+/* creado por diego torres ( no soy el cantante xD) */
+/* Main section aside */
+
+.main{
+    
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.section{
+    width: 75%;
+    height: 100%;       
+}
+
+.h2{
+    padding: 5px 20px;
+    font-size: 2rem;
+    color: var(--primary-color);
+        
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    
+    font-family: var(--secondary-font);
+
+}
+.registro{
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.form-control input{
+
+    padding: 8px;
+    border-radius: 15px;
+    background-color: none;
+    border-color: var(--primary-color);
+    
+    margin-bottom: 10px;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 16px;    
+}
+
+.labelFecha{
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-select{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    
+    padding-top: 10px;
+    padding-block:1px;
+    text-align: center;
+
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+}
+.button button{
+    width: 100px;   
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+    padding-top: 10px;
+    padding-block:1px;
+    text-align: center;
+
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+}
+
+.form-help a{
+    color: var(--primary-color);
+}
+
+
+.aside{
+    width: 30%; 
+    height: 100%;
+    display: flex;  
+    
+}
+
+
+/* footer */
+
+
+.footer {    
+    background-color:var(--primary-color); 
+    margin: 0;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+    
+  }
+
+      
+
+.footer a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 2vw;
+    padding: 0;
+    list-style-type: none; 
+    text-align: center;
+    display: inline-block;
+}

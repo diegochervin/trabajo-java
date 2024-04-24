@@ -263,6 +263,7 @@ body{
     list-style-type: none; 
     text-align: center;
     display: inline-block;
+    color: var(--white-color);
 }
 
 .w3-container{

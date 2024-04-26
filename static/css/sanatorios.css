@@ -32,7 +32,7 @@
     
     
     h1{
-        color: var(--white-color);
+        color: black;
         font-size: 2.5rem;
      }
     
@@ -160,6 +160,43 @@
     }
     
     
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.sanatorio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.imagen {
+    width: 40%; /* Ancho del contenedor de la imagen */
+    height: auto; /* Altura ajustada automáticamente según el contenido */
+}
+
+.imagen img {
+    max-width: 100%; /* Ajusta la anchura máxima de la imagen */
+    max-height: 100%; /* Ajusta la altura máxima de la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    border-radius: 5px;
+}
+
+
+
     
     .footer {
         background-color:var(--primary-color); 
@@ -197,36 +234,5 @@
     max-width: 600px;
     margin: 50px auto;
     text-align: center;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-.terms {
-    text-align: left;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.terms ul {
-    padding-left: 20px;
-}
-
-.terms button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.terms button:hover {
-    background-color: #45a049;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 

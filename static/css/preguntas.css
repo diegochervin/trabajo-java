@@ -1,3 +1,4 @@
+/* creado por diego pineda */
 :root{
     --primary-color:#021366; ;
     --bg-color:#f98b8b;
@@ -22,6 +23,12 @@
         padding: 0;
         height: 100vh;
        
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: var(--secondary-color);
+        font-family: var(--primary-font);
     }
      
      a{
@@ -50,12 +57,7 @@
     
     
     
-    body{
-        margin: 0;
-        padding: 0;
-        background-color: var(--bg-color);
-        font-family: var(--primary-font);
-    }
+   
     
     .d-flex {
         height: 70vh; /*alto*/
@@ -165,6 +167,10 @@
     
     
     .footer {
+        position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
         background-color:var(--primary-color); 
         margin: 0;
         flex-direction: column;

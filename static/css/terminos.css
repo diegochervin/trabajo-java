@@ -11,74 +11,169 @@
      }
 
 
-header {
-    background-color:var(--primary-color); 
-    margin: 0;
-    flex-direction: column;
-    row-gap: 20px;
-  
-  }
-
- 
+     *{ padding: 0;
+        margin: 0;
+     }
+    
+     body, html{
+        font-family: var(--primary-font);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+       
+    }
+     
+     a{
+        text-decoration: none;
+        color: var(--white-color);
+     } 
+    
+    
+    h1{
+        color: var(--white-color);
+        font-size: 2.5rem;
+     }
+    
+    h2{
+        color: var(--white-color);
+        font-size: 1.5rem;
+    }
+    
+    /* control del header*/
+    /*para copiar el header deben copiar esto y del indel
+    los script abajo del footer y el style de bootstrap
+    */
+    .container-fluid{
+        background-color: var(--primary-color);
+    }
+    
+    
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+        font-family: var(--primary-font);
+    }
+    
+    .d-flex {
+        height: 70vh; /*alto*/
+        box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        background-image: url(..//img/Chequeo-Medico-1.webp);
+        background-size: cover;
+        background-position: center;
+     
+    }
+    
+    .d-flex h1{    
+        font-size: 2rem;
+        color: var(--white-color);
+        transition: background-color 0.3s;
+        border: none;
+        top: 15%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
       
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-
-}
-
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none; 
-    text-align: right;
     }
-
-    nav ul li {
-        display: inline-block;
+    
+    .d-flex h2{    
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: var(--white-color);
+        transition: background-color 0.3s;
+        border: none;
+        top: 30%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        font-family: var(--secondary-font);
+      
+    }
+    
+    
+    .btn-register{
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        transition: background-color 0.3s;
+        border: none;
+        border-radius: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      
+    }
+    
+    .btn-register:hover{
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+    
+    .container-search {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 20vh;
+        background-color: var(--primary-color);
+        font-size: 3rem;
+    }
+    .container-search h2{
+        color: var(--white-color);
+    }
+    
+    .input-search{
+        padding: 8px 15px;
+        border-radius: 5px;
+        background-color: #f1f3f6;
+        color: black;
+        border: none;
+        cursor: pointer;
+        width: 30vw;
+        height: 5vh;
+        font-size: 1.5rem;
+    }
+    
+    .button-search {
+        padding: 8px 15px;
+        border-radius: 25px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: large;
+        &:hover {
+            background-color: #9f3647;
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
+      }
     
-    nav ul li :first-child{
-            margin-left: 0;
-    }
     
-    nav ul li :last-child{
-        margin-right: 2vw;
-    }
-        
-    nav ul li a, nav>a{
-            display: block;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: var(--secondary-color);
-            transition: background-color 0.3s ;
-    }
-
-nav ul li a:hover {
-    background-color: var(--third-color);
-    color: var(--white-color);
+    .w3-container h2 {
+        text-align: center;
+        color: var(--white-color);
     }
     
-
- #logo{
- padding-left: 10vh;
- padding-top: 1.5vh;
-
-    }
-
-
+    
+    
     .footer {
         background-color:var(--primary-color); 
         margin: 0;
         flex-direction: column;
         row-gap: 20px;
+        text-align: center;
         
       }
     
           
+    
     .footer a {
         display: flex;
         justify-content: space-between;
@@ -88,13 +183,17 @@ nav ul li a:hover {
         list-style-type: none; 
         text-align: center;
         display: inline-block;
+        color: var(--white-color);
     }
-
-
-
-    body {
-    font-family: Arial, sans-serif;
-}
+    
+    .w3-container{
+        background-color: var(--primary-color);
+    }
+    
+    .w3-container h2 {
+    align-items: center;
+    color: var(--white-color);
+    }
 
 .container {
     max-width: 600px;

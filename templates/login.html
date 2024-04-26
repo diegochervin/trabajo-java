@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Sanatorio Codo a Codo</title>
+            <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- w3.css -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- bootstrap -->
+            <script
+            src="https://kit.fontawesome.com/fa04600604.js"
+            srossorigin="anonymous"
+            ></script>
+            <link rel="stylesheet" href="../static/css/login.style.css" />
+  </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <!-- logo de la pagina -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="../index.html">Codo a Codo</a>
+                  </div>
+
+                <!-- hipervínculos del menú -->
+                <ul class="nav-links">
+                <li><a href="Nuestros_servicios.html">Nuestros Servicios</a></li>
+                <li>
+                    <a href="./templates/sanatorios.html" class="btn-nav">Sanatorios</a>
+                </li>
+                <li>
+                    <a href="./login.html">
+                    <span class="login-text"
+                        ><i class="fa-regular fa-circle-user"></i>Iniciar Sesión
+                    </span>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+
+            <div class="login-container">
+                <form class="login-form" action="#" method="POST">
+                    <h2 class="login-title">Iniciar Sesión</h2>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+            <aside class="aside">
+                <img src="../static/img/registro_ingresar.jpg" alt="img registro" />
+              </aside>
+            
+        </main>
+        <footer class="footer">
+            <a href="./templates/terminos.html">Términos y condiciones</a>
+            <a href="./templates/preguntas.html">Preguntas Frecuentes</a>
+            <a href="#">Ayuda</a>
+        </footer>
+
+        <!-- bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+        
+    </body>
+</html>

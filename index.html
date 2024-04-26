@@ -1,3 +1,5 @@
+<!-- index creado por diego chervin -->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,33 +14,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="..//trabajo java/static/css/style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- w3.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- bootstrap -->
     <script src="https://kit.fontawesome.com/41f3ea72f6.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <header class="header">
+  
+  <header>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="./index.html">Codo a Codo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Nuestros Servicios</a></li>
+          <li><a href="#">Sanatorios</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./templates/register.html"><span class="glyphicon glyphicon-user"></span> Registrate</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-        <nav>
-            <div id="logo">
-              <a href="./index.html">
-                    <img src="./static/img/logo.png" alt="logo">
-                  <i class="logo"></i>
-              </a>
-            </div>
-
-            <!-- hipervínculos del menú -->
-            <ul class="nav-links">
-                <li><a href="Nuestros_servicios.html">Nuestros Servicios</a></li>
-                <li><a href="../templates/sanatorios.html" class="btn-nav">Sanatorios</a></li>
-                <li><a href="#"> <span class="login-text"><i class="fa-regular fa-circle-user"></i>Iniciar Sesión</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
 
 
     <main>
@@ -132,6 +140,11 @@
         <a href="./templates/preguntas.html">Preguntas Frecuentes</a>
         <a href="#">Ayuda</a>
     </footer>
+    
+    <!-- bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
   </body>
 
   </html>

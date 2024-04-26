@@ -1,4 +1,7 @@
- :root{
+/* css creado por diego chervin */ 
+
+
+:root{
     --primary-color:#021366; ;
     --bg-color:#f98b8b;
     --secondary-color:#dccece;
@@ -40,79 +43,25 @@ h2{
     font-size: 1.5rem;
 }
 
-
-
-
-
-header {
-    background-color:var(--primary-color); 
-    margin: 0;
-    flex-direction: column;
-    row-gap: 20px;
-  
-  }
-
- 
-      
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-
+/* control del header*/
+/*para copiar el header deben copiar esto y del indel
+los script abajo del footer y el style de bootstrap
+*/
+.container-fluid{
+    background-color: var(--primary-color);
 }
-
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none; 
-    text-align: right;
-    }
-
-    nav ul li {
-        display: inline-block;
-        }
-    
-    nav ul li :first-child{
-            margin-left: 0;
-    }
-    
-    nav ul li :last-child{
-        margin-right: 2vw;
-    }
-        
-    nav ul li a, nav>a{
-            display: block; /* convierte los elementos de lina a bloque en el menu */
-            padding: 10px 20px;
-            text-decoration: none;
-            color: var(--secondary-color);
-            transition: background-color 0.3s ;
-    }
-
-nav ul li a:hover {
-    background-color: var(--third-color);
-    color: var(--white-color);
-    }
-    
-
- #logo{
- padding-left: 10vh;
- padding-top: 1.5vh;
-
-    }
-
- 
 
 
 
 body{
+    margin: 0;
+    padding: 0;
     background-color: var(--bg-color);
     font-family: var(--primary-font);
 }
 
 .d-flex {
-    height: 75vh; /*alto*/
+    height: 70vh; /*alto*/
     box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
     display: flex;
     align-items: center;
@@ -179,6 +128,9 @@ body{
     background-color: var(--primary-color);
     font-size: 3rem;
 }
+.container-search h2{
+    color: var(--white-color);
+}
 
 .input-search{
     padding: 8px 15px;
@@ -207,39 +159,11 @@ body{
     }
   }
 
-.noticias{
-    background-color: var(--primary-color);
 
-}
-
-
-.noticias h2 {
+.w3-container h2 {
     text-align: center;
+    color: var(--white-color);
 }
-
-.noticias-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color:var(--primary-color);
-}
-.noticia {
-    width: calc(50% - 10px); /* Calcula el ancho para 2 noticias por fila */
-    margin-bottom: 20px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-}
-.noticia img {
-    width: 100%;
-    height: auto;
-}
-.noticia-texto {
-    padding: 10px;
-    background-color: beige ;
-}
-
-
 
 
 
@@ -272,7 +196,7 @@ body{
 
 .w3-container h2 {
 align-items: center;
-color: var(--secondary-color);
+color: var(--white-color);
 }
 
 

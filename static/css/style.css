@@ -74,7 +74,7 @@ body{
 }
 
 .d-flex h1{    
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--white-color);
     transition: background-color 0.3s;
     border: none;
@@ -87,7 +87,7 @@ body{
 
 .d-flex h2{    
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--white-color);
     transition: background-color 0.3s;
     border: none;

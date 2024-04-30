@@ -17,34 +17,29 @@
     <body>
 
         <header>
-            <nav>
-                <!-- logo de la pagina -->
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>                        
-                    </button>
-                    <a class="navbar-brand" href="../index.html">Codo a Codo</a>
-                  </div>
-
-                <!-- hipervínculos del menú -->
-                <ul class="nav-links">
-                <li><a href="Nuestros_servicios.html">Nuestros Servicios</a></li>
-                <li>
-                    <a href="./templates/sanatorios.html" class="btn-nav">Sanatorios</a>
-                </li>
-                <li>
-                    <a href="./login.html">
-                    <span class="login-text"
-                        ><i class="fa-regular fa-circle-user"></i>Iniciar Sesión
-                    </span>
-                    </a>
-                </li>
-                </ul>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                  <a class="navbar-brand" href="..//index.html">Codo a Codo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">Nuestros Servicios</a></li>
+                    <li><a href="#">Sanatorios</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="..//templates/register.html"><span class="glyphicon glyphicon-user"></span> Registrate</a></li>
+                    <li><a href="..//templates/login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesion</a></li>
+                  </ul>
+                </div>
+              </div>
             </nav>
-
-        </header>
+          </header>
         <main>
 
             <div class="login-container">
@@ -64,9 +59,11 @@
               </aside>
             
         </main>
+
+
         <footer class="footer">
-            <a href="./templates/terminos.html">Términos y condiciones</a>
-            <a href="./templates/preguntas.html">Preguntas Frecuentes</a>
+            <a href="../templates/terminos.html">Términos y condiciones</a>
+            <a href="../templates/preguntas.html">Preguntas Frecuentes</a>
             <a href="#">Ayuda</a>
         </footer>
 

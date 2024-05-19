@@ -107,10 +107,7 @@ h2{
     background-color: var(--third-color);
 }
 
-.imagen {
-  max-height: 80vh;
-    
-}
+
 
 /* footer */
 
@@ -137,16 +134,13 @@ h2{
     display: inline-block;
 }
 
-.navbar-brand {
-    &:hover{
-        animation: tilt-n-move-shaking 0.25s infinite;
-}
+.imagen {
+    max-width: 70vw;
+    max-height: 70vh;
 }
 
-@keyframes tilt-n-move-shaking {
-    0% { transform: translate(0, 0) rotate(0deg); }
-    25% { transform: translate(5px, 5px) rotate(5deg); }
-    50% { transform: translate(0, 0) rotate(0eg); }
-    75% { transform: translate(-5px, 5px) rotate(-5deg); }
-    100% { transform: translate(0, 0) rotate(0deg); }
-}
+@media (max-width: 695px) {
+    .aside {
+        display: none;
+    }}
+

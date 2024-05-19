@@ -20,7 +20,7 @@
     font-family: var(--primary-font);
     margin: 0;
     padding: 0;
-    height: 100vh;
+
     
 }
  
@@ -40,183 +40,87 @@ h2{
    font-size: 1.5rem;
 }
 
-
-
-
-
-header {
-   background-color:var(--primary-color); 
-   margin: 0;
-   flex-direction: column;
-   row-gap: 20px;
- 
- }
-
-
-     
-
- nav {
-   display: flex;
-   justify-content: space-between;
-   align-items: center; 
-
+/* control del header*/
+/*para copiar el header deben copiar esto y del indel
+los script abajo del footer y el style de bootstrap
+*/
+.container-fluid{
+    background-color: var(--primary-color);
 }
+    
 
-
-nav ul {
-   margin: 0;
-   padding: 0;
-   list-style-type: none; 
-   text-align: right;
-   }
-
-   nav ul li {
-       display: inline-block;
-       }
    
-   nav ul li :first-child{
-           margin-left: 0;
-   }
-   
-   nav ul li :last-child{
-       margin-right: 2vw;
-   }
-       
-   nav ul li a, nav>a{
-           display: block; /* convierte los elementos de lina a bloque en el menu */
-           padding: 10px 20px;
-           text-decoration: none;
-           color: var(--secondary-color);
-           transition: background-color 0.3s ;
-   }
-
-nav ul li a:hover {
-   background-color: var(--third-color);
-   color: var(--white-color);
-   }
-   
-
-#logo{
-padding-left: 10vh;
-padding-top: 1.5vh;
-
-   }
-
-
-
-
-
-body{
-   background-color: var(--secondary-color);
-   font-family: var(--primary-font);
-}
-
-
-
-
 /* creado por diego torres ( no soy el cantante xD) */
 /* Main section aside */
-
-.main{
-    
-    width: 100%;
-    height: calc(100vh - 200px);
+.main-container {
+    flex: 1;
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
     align-items: center;
-}
-
-.section{
-    width: 75%;
-    height: 100%;       
-}
-
-.h2{
-    padding: 5px 20px;
-    font-size: 2rem;
-    color: var(--primary-color);
-        
-    top: 10%;
-    left: 10%;
-    position: absolute;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
-    font-family: var(--secondary-font);
-
 }
-.registro{
-    font-family: var(--secondary-font);
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-size: 30px;
-}
-.form-control input{
-
-    padding: 8px;
-    border-radius: 15px;
-    background-color: none;
-    border-color: var(--primary-color);
+.register-container {
     
-    margin-bottom: 10px;
-    outline: none;
-    color: var(--primary-color);
-    font-size: 16px;    
-}
-
-.labelFecha{
-    font-family: var(--secondary-font);
-    font-size: 20px;
-    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-}
-.form-select{
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    
-    padding-top: 10px;
-    padding-block:1px;
-    text-align: center;
-
-    padding: 5px;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border: none;
-}
-.button button{
-    width: 100px;   
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 1rem;
-    
-    padding-top: 10px;
-    padding-block:1px;
-    text-align: center;
-
-    padding: 5px;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border: none;
-}
-
-.form-help a{
-    color: var(--primary-color);
-}
-
-
-.aside{
-    width: 30%; 
     height: 100%;
-    display: flex;  
-    
+}
+.register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+.form-group {
+    margin-bottom: 15px;
+    flex-shrink: 0;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-group input[type="checkbox"] {
+    width: auto;
+}
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-actions button.reset {
+    background-color: #dc3545;
+}
+.form-actions button:hover {
+    opacity: 0.9;
+}
+.spacer {
+    flex-grow: 1;
 }
 
 
-/* footer */
-
-
-.footer {    
+  .footer {
     background-color:var(--primary-color); 
     margin: 0;
     flex-direction: column;
@@ -236,7 +140,20 @@ body{
     list-style-type: none; 
     text-align: center;
     display: inline-block;
+    color: var(--white-color);
 }
 
 
+.navbar-brand {
+    &:hover{
+        animation: tilt-n-move-shaking 0.25s infinite;
+}
+}
 
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}

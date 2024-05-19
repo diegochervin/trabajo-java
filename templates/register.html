@@ -1,143 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style_register.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Sanatorio Codo a Codo</title>
-    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/fa04600604.js"
-      srossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../static/css/style_register.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <!-- logo de la pagina -->
-        <div id="logo">
-          <a href="/">
-            <img src="../static/img/logo.png" alt="logo" />
-            <i class="logo"></i>
-          </a>
-        </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- w3.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- bootstrap -->
+    <script src="https://kit.fontawesome.com/41f3ea72f6.js" crossorigin="anonymous"></script>
+</head>
 
-        <!-- hipervínculos del menú -->
-        <ul class="nav-links">
-          <li><a href="Nuestros_servicios.html">Nuestros Servicios</a></li>
-          <li>
-            <a href="./templates/sanatorios.html" class="btn-nav">Sanatorios</a>
-          </li>
-          <li>
-            <a href="./login.html">
-              <span class="login-text"
-                ><i class="fa-regular fa-circle-user"></i>Iniciar Sesión
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+
+  <body>
+    
+      <header>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="../index.html">Codo a Codo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Nuestros Servicios</a></li>
+                <li><a href="./sanatorios.html">Sanatorios</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="./register.html"><span class="glyphicon glyphicon-user"></span> Registrate</a></li>
+                <li><a href="./login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesion</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
     <!-- Formulario -->
-    <main class="main">   
+    <main>   
+      <div class="main-container">
+        <div class="register-container">
+            <h2 class="register-title">Registro</h2>
+            <form class="register-form" action="#" method="POST">
+                <div class="form-group">
+                    
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar Contraseña" required>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                </div>
+                <div class="form-group">
+                  <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
+                <div class="form-group">
+                    
+                    <select id="genero" name="genero" required>
+                        <option value="">Seleccione Genero</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="indefinido">Indefinido</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Registrarse</button>
+                    <button type="reset" class="reset">Borrar Todo</button>
+                </div>
+            </form>
 
-      <section id="form-wrapper" class="d-flex">
-        <h2 class="h2">¡Bienvenidos a Sanatorio Codo a Codo!</h2>
-        <form action="#" method="post" novalidate id="form-register">
-          <p class="registro">Registro</p>
-          <!-- Campos -->
-          <div class="form-control">
-            <input 
-              type="text"
-              name="name"
-              required
-              id="name"
-              placeholder="Nombre"
-            />
-          </div>
-          <div class="form-control">
-            <input 
-              type="text"
-              name="last-name"
-              required
-              id="last-name"
-              placeholder="Apellido"
-            />
-          </div>
-          <div class="form-control">
-            <input 
-              type="email"
-              name="email"
-              required
-              id="email"
-              placeholder="Email"
-            />
-          </div>
-          <div class="form-control">
-            <input 
-              type="password"
-              name="passw"
-              required
-              id="passw"
-              placeholder="Contraseña"
-            />
-          </div>
-          <div class="form-control">
-            <input 
-              type="password"
-              name="passw"
-              required
-              id="passw"
-              placeholder="Confirmar Contraseña"
-            />
-          </div>
-
-          <div class="form-control">
-            <input 
-              type="text"
-              name="phone"
-              required
-              id="phone"
-              placeholder="telefono"
-            />
-          </div>
-
-          <div class="form-control">
-            <label class="labelFecha" for="date">Fecha de nacimiento</label>
-            <input type="date" name="date" required id="date" />
-          </div>
-
-          <div class="form">
-            <select name="genero" id="genero" class="form-select">
-              <option value="">Genero</option>
-              <option value="IN">Indefinido</option>
-              <option value="MU">Mujer</option>
-              <option value="HO">Hombre</option>
-            </select>
-          </div>
-
-          <!-- boton de la accion -->
-          <div class="button">
-            <button type="submit">Registrate</button>
-            <button type="reset">Borrar todo</button>
-          </div>
-
-          <!-- zona de ayuda -->
-          <div class="form-help">
-            <a  href="#">¿Necesitas ayuda?</a>
-          </div>
-        </form>
-      </section>
-      <aside class="aside">
-        <img src="../static/img/registro_ingresar.jpg" alt="img registro" />
-      </aside>
     </main>
-   <footer class="footer">
-        <a href="./terminos.html">Términos y condiciones</a>
-        <a href="./preguntas.html">Preguntas Frecuentes</a>
-        <a href="#">Ayuda</a>
-    </footer>
-    <!-- este codigo genera espacios en blanco para generar una separación=> &nbsp; -->
-  </body>
+
+
+    <footer class="footer">
+      <a href="./terminos.html">Términos y condiciones</a>
+      <a href="./preguntas.html">Preguntas Frecuentes</a>
+      <a href="#">Ayuda</a>
+  </footer>
+  
+  <!-- bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>

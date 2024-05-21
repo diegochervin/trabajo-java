@@ -1,0 +1,93 @@
+:root{
+    --primary-color:#021366; ;
+    --bg-color:#f98b8b;
+    --secondary-color:#dccece;
+    --third-color:#e80c7d;
+    --third-bis-color:#db4648f2;
+    --bg-input-color:#4f31572c;
+    --white-color: #fdf5ef;
+    --primary-font:'Nunito', sans-serif;
+    --secondary-font: 'Philosopher", sans-serif';
+     }
+
+
+
+     *{ padding: 0;
+        margin: 0;
+     }
+    
+     body, html{
+        font-family: var(--primary-font);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+       
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: var(--secondary-color);
+        font-family: var(--primary-font);
+    }
+
+    .container-fluid{
+        background-color: var(--primary-color);
+        margin: 0;
+    }
+    
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.article {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .article h2 {
+    margin: 0 0 10px;
+    font-family: var(--secondary-font);
+  }
+
+
+  .navbar-brand {
+    &:hover{
+        animation: tilt-n-move-shaking 0.25s infinite;
+}
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.footer {
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:var(--primary-color); 
+    margin: 0;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+    
+  }
+
+
+.footer a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 2vw;
+    padding: 0;
+    list-style-type: none; 
+    text-align: center;
+    display: inline-block;
+    color: var(--white-color);
+}
